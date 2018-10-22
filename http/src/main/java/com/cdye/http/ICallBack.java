@@ -7,6 +7,7 @@ package com.cdye.http;
  */
 
 public interface ICallBack {
-    void onSuccess(String result);
-    void onFailure(Throwable throwable);
+    void onSuccess(String result,int what);
+    void onFailure(Throwable throwable, int what);
+    void onFinish(int what);
 }
